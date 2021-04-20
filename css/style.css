@@ -2,8 +2,12 @@
 Colors used:
 Type (dark grey): #2f2f2f;
 Primary Color (Orange): #ff8800;
-Secondary Color (Light Orange): #ffce96;
+Secondary Color (Light Orange): #ffe1be;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -16,27 +20,24 @@ body {
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 h1 {
   font-size: 2.25em;
   font-weight: 600;
-  background-color: #ffffff;
   color: #ff8800;
 }
 
 h2 {
   font-size: 1.875em;
   font-weight: 600;
-  background-color: #ffffff;
   color: #ff8800;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 400;
-  background-color: #ffffff;
   color: #ff8800;
 }
 
@@ -82,7 +83,8 @@ a:active {
 }
 
 .button:visited {
-  color: #ffffff;}
+  color: #ffffff;
+}
 
 .button:hover {
   opacity: 0.8;
@@ -99,6 +101,7 @@ a:active {
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #ff8800;
+  margin-bottom: 25px;
 }
 
 .button.contact:hover {
@@ -108,4 +111,86 @@ a:active {
 
 .button.contact:active {
   color: #d37100;
+}
+
+/* Layout styling */
+header {
+  background-color: #ffe1be;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.55);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 237.61px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ff8800;
+}
+
+nav>ul>li>a:visited {
+  color: #ff8800;
+}
+
+nav>ul>li>a:active {
+  color: #2f2f2f;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffe1be;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* not yet complete; trying to resize and space items */
+.social {
+  display: inline-block;
+  width: 100%;
+}
+
+.linkedin {
+  max-width: 50px;
 }
