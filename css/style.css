@@ -27,23 +27,33 @@ h1 {
   font-size: 2.25em;
   font-weight: 600;
   color: #ff8800;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.875em;
   font-weight: 600;
   color: #ff8800;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: #ff8800;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
   font-size: 1.25em;
   font-weight: 400;
+}
+
+p {
+  margin-top: 10px;
 }
 
 img {
@@ -52,7 +62,6 @@ img {
 
 a {
   color: #ff8800;
-  text-decoration: none;
   /* hyperlinks will not be underlined */
 }
 
@@ -63,7 +72,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #ffce96;
-  text-decoration: underline;
+  text-decoration: none;
   /* hyperlink is underlined when hovering */
 }
 
@@ -80,6 +89,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #d37100;
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:visited {
@@ -124,7 +134,7 @@ header {
 }
 
 main {
-  padding-top: 237.61px;
+  padding-top: 176px;
 }
 
 .container {
@@ -136,7 +146,7 @@ main {
   /* 25px top and bottom, 0 left and right */
 }
 
-#projects .row {
+.projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #2f2f2f;
 }
@@ -146,7 +156,7 @@ main {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav>ul {
@@ -162,15 +172,24 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #ff8800;
+  color: #2f2f2f;
+  text-decoration: none;
 }
 
 nav>ul>li>a:visited {
+  color: #2f2f2f;
+}
+
+nav>ul>li>a:hover {
   color: #ff8800;
 }
 
 nav>ul>li>a:active {
   color: #2f2f2f;
+}
+
+.active {
+  color: #ff8800 !important;
 }
 
 nav {
@@ -185,12 +204,67 @@ nav {
   width: 100%;
 }
 
-/* not yet complete; trying to resize and space items */
-.social {
-  display: inline-block;
+.social .fab {
+  font-size: 40px;
+  margin-right: 10px;
+  margin-left: 10px; /* I added this because it the icons didn't seem centered due to the margin-right on the instagram icon */
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .even, .odd {
+    display: flex;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+  }
+
+  .even .column, .odd .column {
+    display: flex;
+    align-items: center;
+  }
+
+  /*
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .odd [class*="col-"] {
+    float: right;
+  }*/
+}
+
+#skills h3 {
+  text-align: center;
+}
+
+#skills>ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#tools h3 {
+  text-align: center;
+}
+
+#tools>ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+footer {
+  background-color: #ffe1be;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
   width: 100%;
 }
 
-.linkedin {
-  max-width: 50px;
+footer h2{
+  margin:10px 0;
 }
