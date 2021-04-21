@@ -207,7 +207,8 @@ nav {
 .social .fab {
   font-size: 40px;
   margin-right: 10px;
-  margin-left: 10px; /* I added this because it the icons didn't seem centered due to the margin-right on the instagram icon */
+  margin-left: 10px;
+  /* I added this because it the icons didn't seem centered due to the margin-right on the instagram icon */
   margin-bottom: 15px;
 }
 
@@ -240,21 +241,24 @@ nav {
 }
 
 #skills h3 {
-  text-align: center;
+  margin-bottom: 0;
 }
 
-#skills>ul {
+#skills ul {
   list-style-type: none;
   text-align: center;
+  display: inline;
 }
 
 #tools h3 {
-  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-#tools>ul {
+#tools ul {
   list-style-type: none;
   text-align: center;
+  display: inline;
 }
 
 footer {
@@ -265,6 +269,6 @@ footer {
   width: 100%;
 }
 
-footer h2{
-  margin:10px 0;
+footer h2 {
+  margin: 10px 0;
 }
