@@ -24,13 +24,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 1.8em;
   font-weight: 600;
   color: #ff8800;
 }
 
 h2 {
-  font-size: 1.875em;
+  font-size: 1.7em;
   font-weight: 600;
   color: #ff8800;
   margin-bottom: 0px;
@@ -151,6 +151,11 @@ main {
   border-bottom: 1px solid #2f2f2f;
 }
 
+.projects .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 #hero {
   background-color: #ffe1be;
   padding: 20px 0;
@@ -161,6 +166,8 @@ main {
 
 #hero span {
   display: block;
+  font-size: 60%;
+  margin-top: 1em;
 }
 
 .logo {
@@ -210,7 +217,7 @@ nav {
   margin-right: 10px;
   margin-left: 10px;
   /* I added this because the icons didn't seem centered due to the margin-right on the instagram icon */
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .row .skill-tools {
@@ -227,6 +234,10 @@ nav {
   /*text-align: center;*/
   padding: 0;
   margin: 0 0 20px 0;
+}
+
+.copy {
+  font-size: 70%;
 }
 
 footer {
@@ -366,8 +377,17 @@ MEDIUM DEVICES (640px and larger)
   main {
     padding-top: 132px;
   }
+/*CONSIDER ADDING PADDING TO ALL SECTIONS AND THEREFORE REMOVE PADDING FROM HERO
+#hero {
+  padding: 0;
+}
+
+section {
+  padding:2em 0;
+}*/
 
   h1 {
+    font-size: 2.2em;
     text-align: center;
   }
 
@@ -398,8 +418,24 @@ MEDIUM DEVICES (640px and larger)
     display: table;
   }
 
+.summary picture{
+  display: block;
+  text-align: center;
+}
+
+.prof {
+  max-width: 400px;
+  border-radius: 100em;
+  /*border: 2px solid #8e8e8e;*/
+}
+
   .button-dl {
     margin-bottom: 20px;
+/*to center the button
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    margin: 2em auto;*/
   }
 
   .even, .odd {
@@ -413,6 +449,7 @@ MEDIUM DEVICES (640px and larger)
   .even .column, .odd .column {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   /*
@@ -457,13 +494,21 @@ LARGE DEVICES (1024px and larger)
     float: right;
   }
 
+  .skillscol {
+    width: 30%;
+  }
+
   .skills-tools {
     padding: 10px 0 0 0;
     float: none;
   }
 
+  .skillscol {
+    width: 30%;
+  }
+
   .prof {
-    padding: 0 250px;
+  margin-bottom: 10px;
   }
 
   .button-dl {
