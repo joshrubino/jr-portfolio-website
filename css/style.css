@@ -126,15 +126,14 @@ a:active {
 /* Layout styling */
 header {
   background-color: #ffe1be;
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.55);
+  padding: 10px 0 4px;
+  box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 176px;
+  padding-top: 97px;
 }
 
 .container {
@@ -171,16 +170,13 @@ main {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 125px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -207,9 +203,34 @@ nav>ul>li>a:active {
   color: #ff8800 !important;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 .social .fab {
@@ -306,7 +327,7 @@ footer h2 {
 }*/
 @keyframes plane-fly {
   from {
-    transform: translate(-100, 5px);
+    transform: translate(-100px, 5px);
   }
 
   /*tried to start the plane off-screen; didn't seem to work*/
@@ -341,6 +362,10 @@ MEDIUM DEVICES (640px and larger)
     margin-right: 50px;
   }
 
+  .logo {
+    max-width: 150px;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -348,36 +373,58 @@ MEDIUM DEVICES (640px and larger)
     font-size: .9em;
   }
 
-/*navigation animation attempt ... not working
-.borderxwidth a:before, .borderxwidth a:after {
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav ul a {
+    position: relative;
+    padding: 5px 0px !important;
+    margin: 0px 15px;
+  }
+
+  ul.borderxwidth a:before, ul.borderxwidth a:after {
     position: absolute;
     opacity: 0;
     width: 0%;
     height: 2px;
     content: '';
     background: #FFF;
-    transition: all 0.3s;
+    transition: all 0.4s;
   }
 
-  .borderxwidth a:before {
+  ul.borderxwidth a:before {
     left: 0px;
     top: 0px;
   }
 
-  .borderxwidth a:after {
+  ul.borderxwidth a:after {
     right: 0px;
     bottom: 0px;
   }
 
-  .borderxwidth a:hover:before, .borderxwidth a:hover:after {
+  ul.borderxwidth a:hover:before, ul.borderxwidth a:hover:after {
     opacity: 1;
     width: 100%;
-  }*/
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   main {
     padding-top: 132px;
   }
-/*CONSIDER ADDING PADDING TO ALL SECTIONS AND THEREFORE REMOVE PADDING FROM HERO
+
+  /*CONSIDER ADDING PADDING TO ALL SECTIONS AND THEREFORE REMOVE PADDING FROM HERO
 #hero {
   padding: 0;
 }
@@ -385,7 +432,6 @@ MEDIUM DEVICES (640px and larger)
 section {
   padding:2em 0;
 }*/
-
   h1 {
     font-size: 2.2em;
     text-align: center;
@@ -418,20 +464,20 @@ section {
     display: table;
   }
 
-.summary picture{
-  display: block;
-  text-align: center;
-}
+  .summary picture {
+    display: block;
+    text-align: center;
+  }
 
-.prof {
-  max-width: 400px;
-  border-radius: 100em;
-  /*border: 2px solid #8e8e8e;*/
-}
+  .prof {
+    max-width: 400px;
+    border-radius: 100em;
+    /*border: 2px solid #8e8e8e;*/
+  }
 
   .button-dl {
     margin-bottom: 20px;
-/*to center the button
+    /*to center the button
     display: block;
     max-width: 250px;
     text-align: center;
@@ -508,7 +554,7 @@ LARGE DEVICES (1024px and larger)
   }
 
   .prof {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .button-dl {
