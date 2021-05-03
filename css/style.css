@@ -226,7 +226,7 @@ nav>ul>li>a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 136, 0, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -373,7 +373,7 @@ MEDIUM DEVICES (640px and larger)
     font-size: .9em;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -410,6 +410,16 @@ MEDIUM DEVICES (640px and larger)
   ul.borderxwidth a:hover:before, ul.borderxwidth a:hover:after {
     opacity: 1;
     width: 100%;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0;
+    border: none;
   }
 
   .navtoggle li:not(:last-child) {
