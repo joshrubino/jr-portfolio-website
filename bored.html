@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Peak Savings Mobile App</title>
+  <script src="https://kit.fontawesome.com/b86f98ebe2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/jr-logo-with-name.svg" class="logo" alt="Josh Rubino Logo"></a>
+        <nav>
+          <ul class="borderxwidth">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Bored - UI/UX Design</h1>
+      </div>
+    </section>
+
+    <section class="project-summary">
+      <div class="container">
+        <picture>
+          <source srcset="img/cs-hp-img/bored-homepage-600px-min.jpg" media="(max-width:767px)">
+          <source srcset="img/cs-hp-img/bored-homepage-1200px-min.jpg" media="(max-width:1023px)">
+          <img src="img/cs-hp-img/bored-large-min.jpg" alt="Bored">
+        </picture>
+        <div class="row">
+          <h2>Overview</h2>
+          <p>Bored is an activity generating mobile app designed for both iOS and Android mobile devices using Human Interface and Material Design guidelines respectively.
+            <br>The goal of this app is to provide an activity or experience to a user they would not have thought to do otherwise. It is a tool that gets people out into the world (using their location or inputting a location) to experience life.</p>
+          <a href="files/bored-case-study.pdf" class="button button-proj" target="_blank">View full case study</a>
+        </div>
+        <div class="row">
+          <h2>Sample Mockups</h2>
+          <p>The screens below are just a sampling of a few of the screens found within the app pairing the iOS and Android versions.</p>
+          <div class="even row">
+            <div class="column col-md-6">
+              <p>After an onboarding process, the user is greeted with the 'Home' screen. It adheres to each device’s guidelines, playing off their strengths, such as the use of radio buttons on the Android screen and the Bored button is prominent in
+                each version, attracting the user to generate their activity.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture>
+                <source srcset="img/bored/bored-home.png" media="(max-width:767px)">
+                <img src="img/bored/bored-home@2x.png" alt="Bored Home">
+              </picture>
+            </div>
+          </div>
+          <div class="odd row">
+            <div class="column col-md-6">
+              <p>After generating an activity from the 'Home' screen, the user is brought to the 'Activity' screen. The iOS version is scrollable for more info, whereas the Android version uses segmented controls to retrieve further information.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture>
+                <source srcset="img/bored/bored-activity.png" media="(max-width:767px)">
+                <img src="img/bored/bored-activity@2x.png" alt="Bored Activity">
+              </picture>
+            </div>
+          </div>
+          <div class="even row">
+            <div class="column col-md-6">
+              <p>'My Library' uses a gradient into the image on iOS and Android places all the info within a card. Both scroll horizontally for more activities and allow the user to rate their past activities.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture>
+                <source srcset="img/bored/bored-library.png" media="(max-width:767px)">
+                <img src="img/bored/bored-library@2x.png" alt="Bored My Library">
+              </picture>
+            </div>
+          </div>
+          <div class="odd row">
+            <div class="column col-md-6">
+              <p>Differences pointed out in earlier screens are clear here in the 'Profile' and 'Settings' screens, as well as the iOS version using rounder elements and Android using sharper elements with drop shadows.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture>
+                <source srcset="img/bored/bored-prof.png" media="(max-width:767px)">
+                <img src="img/bored/bored-prof@2x.png" alt="Bored Profile">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>If you'd like to get in touch, please give me a call at <a href="tel:7817381335">781-738-1335</a> or reach me on Skype at <a href="skype:thejoshuar">thejoshuar</a>. Prefer email?</p>
+      <div>
+        <a href="mailto:joshrubino@gmail.com" class="button contact">Email me</a>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/joshrubino/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/joshrubino" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.behance.net/joshrubino" target="_blank"> <i class="fab fa-behance-square"></i></a>
+        <a href="https://www.instagram.com/therealjayare/" target="_blank"> <i class="fab fa-instagram-square"></i></a>
+      </div><!-- closed social media -->
+      <p class="copy">Copyright Josh Rubino 2021</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
