@@ -77,6 +77,11 @@ a:active {
   color: #ff4d00;
 }
 
+/* Transition effect when sliding down (and up)
+#navbar {
+  transition: top 0.5s;
+}*/
+
 .button {
   display: inline-block;
   background-color: #ff8800;
@@ -327,12 +332,10 @@ footer h2 {
 }*/
 @keyframes plane-fly {
   from {
-    transform: translate(-100px, 5px);
+    transform: translate(-100px, 1px);
   }
-
-  /*tried to start the plane off-screen; didn't seem to work*/
   to {
-    transform: translate(700px, 5px);
+    transform: translate(700px, 1px);
   }
 }
 
@@ -361,6 +364,14 @@ MEDIUM DEVICES (640px and larger)
     margin-left: 50px;
     margin-right: 50px;
   }
+
+.button-proj {
+  margin-bottom: 25px;
+}
+
+.screens{
+  max-inline-size: 300px;
+}
 
   .logo {
     max-width: 150px;
@@ -439,7 +450,7 @@ MEDIUM DEVICES (640px and larger)
   padding: 0;
 }
 
-section {
+.project-summmary {
   padding:2em 0;
 }*/
   h1 {
