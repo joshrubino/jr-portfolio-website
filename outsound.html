@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Peak Savings Mobile App</title>
+  <script src="https://kit.fontawesome.com/b86f98ebe2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/jr-logo-with-name.svg" class="logo" alt="Josh Rubino Logo"></a>
+        <nav>
+          <ul class="borderxwidth">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>OutSound - UI Design</h1>
+      </div>
+    </section>
+
+    <section class="project-summary">
+      <div class="container">
+        <picture>
+          <source srcset="img/cs-hp-img/outsound-homepage-600px-min.jpg" media="(max-width:767px)">
+          <source srcset="img/cs-hp-img/outsound-homepage-1200px-min.jpg" media="(max-width:1023px)">
+          <img src="img/cs-hp-img/outsound-large-min.jpg" alt="OutSound">
+        </picture>
+        <div class="row">
+          <h2>Overview</h2>
+          <p>The goal of OutSound is to help users discover new music. They can do that through their own searches and app suggestions that have been curated for the user based on their listening history. OR they can learn about a new artist or song
+            from other users’ profiles and by sharing with friends from the app.</p>
+          <a href="files/outsound-case-study.pdf" class="button button-proj" target="_blank">View full case study</a>
+        </div>
+        <div class="row">
+          <h2>Sample Mockups</h2>
+          <p>The following screens are a sampling of the first iteration delivered for the OutSound app.</p>
+          <div class="even row">
+            <div class="column col-md-6">
+              <p>The 'Splash' screen leads into the 'Create Account' screen, which provides many different options for a user to begin their journey.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture class="screens">
+                <source srcset="img/outsound/outsound-login.png" media="(max-width:767px)">
+                <img src="img/outsound/outsound-login@2x.png" alt="OutSound Home">
+              </picture>
+            </div>
+          </div>
+          <div class="odd row">
+            <div class="column col-md-6">
+              <p>To accentuate the curated suggestions for an individual user, the 'Home' screen utilizes the bright images of artist press photos, whereas the Explore screen is a bit more broad and uses a bluish overlay so as to keep everything
+                equal and allow the user to discover new music without too much outside influence.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture class="screens">
+                <source srcset="img/outsound/outsound-home.png" media="(max-width:767px)">
+                <img src="img/outsound/outsound-home@2x.png" alt="OutSound Home">
+              </picture>
+            </div>
+          </div>
+          <div class="even row">
+            <div class="column col-md-6">
+              <p>Keeping the elements somewhat large on the 'Play' and 'Share' screens was important. The user can quickly get the result from their chosen action.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture class="screens">
+                <source srcset="img/outsound/outsound-play.png" media="(max-width:767px)">
+                <img src="img/outsound/outsound-play@2x.png" alt="OutSound Play">
+              </picture>
+            </div>
+          </div>
+          <div class="odd row">
+            <div class="column col-md-6">
+              <p>Whether searching or going through one’s saved songs on the 'Search' and 'Liked' screens, the user can quickly play or share a song or artist from there without having to do so from a different screen.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture class="screens">
+                <source srcset="img/outsound/outsound-search.png" media="(max-width:767px)">
+                <img src="img/outsound/outsound-search@2x.png" alt="OutSound Search">
+              </picture>
+            </div>
+          </div>
+          <div class="even row">
+            <div class="column col-md-6">
+              <p>Each user can create a Profile and have a list of songs that they suggest. Other users can see this information and quickly learn about a new song by playing or sharing.</p>
+            </div>
+            <div class="column col-md-6">
+              <picture class="screens">
+                <source srcset="img/outsound/outsound-prof.png" media="(max-width:767px)">
+                <img src="img/outsound/outsound-prof@2x.png" alt="OutSound Profile">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>If you'd like to get in touch, please give me a call at <a href="tel:7817381335">781-738-1335</a> or reach me on Skype at <a href="skype:thejoshuar">thejoshuar</a>. Prefer email?</p>
+      <div>
+        <a href="mailto:joshrubino@gmail.com" class="button contact">Email me</a>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/joshrubino/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/joshrubino" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.behance.net/joshrubino" target="_blank"> <i class="fab fa-behance-square"></i></a>
+        <a href="https://www.instagram.com/therealjayare/" target="_blank"> <i class="fab fa-instagram-square"></i></a>
+      </div><!-- closed social media -->
+      <p class="copy">Copyright Josh Rubino 2021</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
