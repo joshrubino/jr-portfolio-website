@@ -18,7 +18,7 @@ function menuToggle() {
   }
 }
 
-/*
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -28,4 +28,4 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-133px";
   }
   prevScrollpos = currentScrollPos;
-}*/
+}
