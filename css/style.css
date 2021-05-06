@@ -130,7 +130,7 @@ a:active {
 
 /* Layout styling */
 header {
-  background-color: #ffe1be;
+  background-color: #ffffff;
   padding: 10px 0 4px;
   box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.55);
   position: fixed;
@@ -162,6 +162,7 @@ main {
 
 #hero {
   background-color: #ffe1be;
+  background-image: linear-gradient(to bottom, #ffe1be, #ffffff);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -268,6 +269,7 @@ nav>ul>li>a:active {
 
 footer {
   background-color: #ffe1be;
+  background-image: linear-gradient(to top, #ffe1be, #ffffff);
   text-align: center;
   padding: 10px 0;
 }
@@ -402,9 +404,9 @@ MEDIUM DEVICES (640px and larger)
     position: absolute;
     opacity: 0;
     width: 0%;
-    height: 2px;
+    height: 1px;
     content: '';
-    background: #FFF;
+    background: #ff8800;
     transition: all 0.4s;
   }
 
