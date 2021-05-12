@@ -1,7 +1,7 @@
 /*
 Colors used:
 Type (dark grey): #2f2f2f;
-Primary Color (Orange): #ff8800;
+Primary Color (Orange): #e27900;
 Secondary Color (Light Orange): #ffe1be;
 */
 * {
@@ -26,20 +26,20 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.8em;
   font-weight: 600;
-  color: #ff8800;
+  color: #e27900;
 }
 
 h2 {
   font-size: 1.7em;
   font-weight: 600;
-  color: #ff8800;
+  color: #e27900;
   margin-bottom: 0px;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 400;
-  color: #ff8800;
+  color: #e27900;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -58,12 +58,12 @@ img {
 }
 
 a {
-  color: #ff8800;
+  color: #e27900;
   /* hyperlinks will not be underlined */
 }
 
 a:visited {
-  color: #ff8800;
+  color: #e27900;
 }
 
 a:hover,
@@ -84,8 +84,8 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #ff8800;
-  color: #ffffff;
+  background-color: #e27900;
+  color: #2e2e2e;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -97,10 +97,11 @@ a:active {
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #2e2e2e;
 }
 
 .button:hover {
+  color: #2e2e2e;
   opacity: 0.8;
 }
 
@@ -110,17 +111,17 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #ff8800;
+  color: #c86b00;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #ff8800;
+  border: 2px solid #c86b00;
   margin-bottom: 25px;
   transition: 0.2s;
 }
 
 .button.contact:hover {
-  background-color: #ff8800;
-  color: #ffffff;
+  background-color: #e27900;
+  color: #2e2e2e;
   border-bottom: 2px solid #d37100;
 }
 
@@ -175,6 +176,10 @@ main {
   margin-top: 1em;
 }
 
+#hero h1 {
+  color: #c86b00;
+}
+
 .logo {
   max-width: 125px;
 }
@@ -198,7 +203,7 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover {
-  color: #ff8800;
+  color: #e27900;
 }
 
 nav>ul>li>a:active {
@@ -206,7 +211,7 @@ nav>ul>li>a:active {
 }
 
 .active {
-  color: #ff8800 !important;
+  color: #e27900 !important;
 }
 
 .navtoggle li:not(:last-child) {
@@ -232,7 +237,7 @@ nav>ul>li>a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 136, 0, 0.5);
+  border-top: 1px solid rgba(226, 121, 0, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -245,6 +250,11 @@ nav>ul>li>a:active {
   margin-left: 10px;
   /* I added this because the icons didn't seem centered due to the margin-right on the instagram icon */
   margin-bottom: 10px;
+  color: #c86b00;
+}
+
+.social .fab:hover {
+  opacity: 0.8;
 }
 
 .row .skill-tools {
@@ -275,7 +285,12 @@ footer {
 }
 
 footer h2 {
+  color: #c86b00;
   margin: 10px 0;
+}
+
+footer a {
+  color: #c86b00;
 }
 
 .skyline {
@@ -406,7 +421,7 @@ MEDIUM DEVICES (640px and larger)
     width: 0%;
     height: 1px;
     content: '';
-    background: #ff8800;
+    background: #e27900;
     transition: all 0.4s;
   }
 
